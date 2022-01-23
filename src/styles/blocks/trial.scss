@@ -1,0 +1,40 @@
+.trial {
+  $link-color: #03040E;
+
+  display: block;
+  width: 246px;
+  height: 49px;
+  background-color: $white-color;
+  border: 2px solid $white-color;
+  border-radius: 14px;
+  transition: background-color $transition-duration;
+
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $link-color;
+    text-decoration: none;
+    transition: color $transition-duration;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    & > a {
+      color: $white-color;
+    }
+  }
+
+  &:active {
+    background-color: $white-color;
+
+    & > a {
+      color: $link-color;
+    }
+  }
+}

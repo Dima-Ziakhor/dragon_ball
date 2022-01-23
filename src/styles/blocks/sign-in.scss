@@ -1,0 +1,23 @@
+.sign-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  width: 74px;
+  height: 35px;
+  border: 1px solid $white-color;
+  border-radius: 14px;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration: none;
+  color: $white-color;
+  transition: opacity $transition-duration;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

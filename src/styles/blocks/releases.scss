@@ -1,0 +1,17 @@
+.releases {
+  padding: 58px 0 44px;
+  border-bottom: 1px solid $color-light;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-dark;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}

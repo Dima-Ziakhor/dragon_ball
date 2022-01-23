@@ -1,5 +1,10 @@
 @import "./reset";
-@import "./blocks/variables";
-@import "./blocks/mixins";
+@import "./blocks/fonts";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./blocks/container";
 @import "./blocks/sign-in";
+@import "./blocks/trial";
 @import "./blocks/header";
+@import "./blocks/release-card";
+@import "./blocks/releases";

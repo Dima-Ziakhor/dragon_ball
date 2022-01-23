@@ -21,5 +21,5 @@ li {
 
 .header {
   height: 100vh;
-  background: url(assets/img/header_men_7332b6aa3c6aa3f18b06.png);
+  background: url(asset/img/header_men_7332b6aa3c6aa3f18b06.png) no-repeat;
 }

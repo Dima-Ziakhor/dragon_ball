@@ -1,4 +1,95 @@
 .header {
   height: 100vh;
-  background: url("../img/header_men.png") no-repeat;
+  background-color: $header-bgc;
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(360deg, #000000 -3.02%, rgba(24, 37, 114, 0) 91.29%);
+    z-index: 1;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 42px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(76, 90, 171, 0.8);;
+  }
+
+  &__logo-block {
+    display: block;
+    width: 50px;
+    height: 53px;
+    transition: transform $transition-duration;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__dragon-ball {
+    position: absolute;
+    bottom: 222px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 92px;
+    background: url("../img/dragon_ball_logo.png") center center / contain no-repeat;
+    z-index: 0;
+  }
+
+  &__anime-men {
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 521px;
+    height: 100vh;
+    background: url("../img/header_men.png") bottom center / contain no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: $white-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 21px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $white-color;
+    text-align: center;
+  }
+
+  &__trial {
+    margin: 0 auto;
+    width: 246px;
+    height: 49px;
+
+    & > a {
+      font-size: 16px;
+    }
+  }
 }

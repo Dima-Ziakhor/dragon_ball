@@ -9,15 +9,113 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top">
-        <img alt="Logo" class="header__logo" src=<%=require("./icon/logo.png")%>>
+      <div class="header__wrapper">
+        <div class="container header__container">
+          <div class="header__content-wrapper">
+            <div class="header__top">
+              <a class="header__logo-block" href="#">
+                <img alt="Logo" class="header__logo" src=<%=require("./icon/logo.png")%>>
+              </a>
 
-        <a class="header__sign-in sign-in">
-          <img alt="User icon" class="sign-in__icon" src=<%=require("./icon/user_icon.svg")%>>
-          <span class="sign-in__text">Sign In</span>
-        </a>
+              <a class="header__sign-in sign-in" href="#" title="Sign in">
+                <img alt="User icon" class="sign-in__icon" src=<%=require("./icon/user_icon.svg")%>>
+                <span class="sign-in__text">Sign In</span>
+              </a>
+            </div>
+
+            <div class="header__dragon-ball"></div>
+
+            <div class="header__content">
+              <h1 class="header__title">
+                The World's Largest Anime Collection
+              </h1>
+
+              <h3 class="header__subtitle">
+                Stream on desktop, mobile, gaming consoles, and other streaming devices.
+              </h2>
+
+              <button class="trial header__trial" type="button">
+                <a href="#">start your free trial</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="header__anime-men"></div>
     </header>
+
+    <main>
+      <article class="releases">
+        <div class="container">
+          <h2 class="releases__title">
+            Latest Releases
+          </h2>
+
+          <section class="releases__cards">
+            <div class="releases__card release-card">
+              <div class="release-card__image-block">
+                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/tokyo_revengers.png")%> >
+              </div>
+
+              <div class="release-card__content">
+                <div class="release-card__type">
+                  TV SHOW
+                </div>
+
+                <h3 class="release-card__title">
+                  Tokyo Revengers
+                </h3>
+
+                <p class="release-card__description">
+                  Takemichi Hanagaki is a that's reached the absolute pits of despair in his life. He finds out that the only girlfriend he ever had in his life that he dated in middle...
+                </p>
+              </div>
+            </div>
+
+            <div class="releases__card release-card">
+              <div class="release-card__image-block">
+                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/sun-ken_rock.png")%> >
+              </div>
+
+              <div class="release-card__content">
+                <div class="release-card__type">
+                  MANGA
+                </div>
+
+                <h3 class="release-card__title">
+                  Sun-Ken Rock
+                </h3>
+
+                <p class="release-card__description">
+                  Ken left Japan, pursuing the woman he loves to Korea. However, while she became a policewoman, Ken somehow wound up in a gang, even becoming their boss! The...
+                </p>
+              </div>
+            </div>
+
+            <div class="releases__card release-card">
+              <div class="release-card__image-block">
+                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/black_clover.png")%> >
+              </div>
+
+              <div class="release-card__content">
+                <div class="release-card__type">
+                  TV SHOW
+                </div>
+
+                <h3 class="release-card__title">
+                  Black Clover
+                </h3>
+
+                <p class="release-card__description">
+                  In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is...
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
 
     <script src="./bandle.js"></script>
   </body>

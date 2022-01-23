@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bandle.js',
-    assetModuleFilename: 'assets/img/[name]_[hash][ext]',
+    assetModuleFilename: 'asset/img/[name]_[hash][ext]',
   },
   devServer: {
     port: 5000,
@@ -36,7 +36,7 @@ module.exports = {
       filename: 'styles.css',
     }),
     new HtmlWebpackPlugin({
-      title: 'Custom template',
+      title: 'Dragon ball',
       template: './src/index.html',
     }),
   ],
