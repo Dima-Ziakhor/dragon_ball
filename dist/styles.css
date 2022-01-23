@@ -18,3 +18,8 @@ li {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  height: 100vh;
+  background: url(assets/img/header_men_7332b6aa3c6aa3f18b06.png);
+}
