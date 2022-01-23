@@ -1,6 +1,6 @@
 {
   "name": "dragon_ball",
-  "homepage": ".",
+  "homepage": "http://Dima-Ziakhor.github.io/dragon_ball",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,9 @@
     "build-prod": "webpack -c webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint src/*.js",
-    "slint": "npx stylelint \"**/*.scss\""
+    "slint": "npx stylelint \"**/*.scss\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-watch": "^8.0.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.2.2",
