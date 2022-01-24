@@ -3,16 +3,16 @@
   flex-basis: 420px;
 
   &__image-block {
+    @include card;
+
     margin-right: 20px;
     width: 200px;
     height: 165px;
-    border-radius: 21px;
-    overflow: hidden;
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
+    @include img;
+
     transition: transform $transition-duration;
 
     &:hover {
@@ -30,14 +30,17 @@
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 14px;
-    color: #929292;
+    color: $description-color;
   }
 
   &__title {
+    @include title;
+
     margin-bottom: 4px;
-    font-weight: 500;
-    font-size: 20px;
-    color: $color-dark;
+  }
+
+  &__title-link {
+    @include link;
   }
 
   &__description {

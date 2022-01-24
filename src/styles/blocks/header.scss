@@ -41,7 +41,7 @@
   }
 
   &__logo {
-    width: 100%;
+    @include img;
   }
 
   &__dragon-ball {

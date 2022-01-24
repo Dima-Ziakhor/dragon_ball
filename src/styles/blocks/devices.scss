@@ -1,0 +1,13 @@
+.devices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__device {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+}
