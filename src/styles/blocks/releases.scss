@@ -1,7 +1,10 @@
 .releases {
-  padding: 58px 0 44px;
-  border-bottom: 1px solid $color-light;
   background-color: #fff;
+
+  &__wrapper {
+    padding: 58px 0 44px;
+    border-bottom: 1px solid $color-light;
+  }
 
   &__title {
     margin-bottom: 18px;

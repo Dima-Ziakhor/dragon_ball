@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="shortcut icon" type="image/png" href=<%=require("./icon/favicon.png")%>>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -48,68 +49,188 @@
     <main>
       <article class="releases">
         <div class="container">
-          <h2 class="releases__title">
-            Latest Releases
-          </h2>
+          <div class="releases__wrapper">
+            <h2 class="releases__title">
+              Latest Releases
+            </h2>
 
-          <section class="releases__cards">
-            <div class="releases__card release-card">
-              <div class="release-card__image-block">
-                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/tokyo_revengers.png")%> >
-              </div>
-
-              <div class="release-card__content">
-                <div class="release-card__type">
-                  TV SHOW
+            <section class="releases__cards">
+              <div class="releases__card release-card">
+                <div class="release-card__image-block">
+                  <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/tokyo_revengers.png")%> >
                 </div>
 
-                <h3 class="release-card__title">
-                  Tokyo Revengers
-                </h3>
+                <div class="release-card__content">
+                  <div class="release-card__type">
+                    TV SHOW
+                  </div>
 
-                <p class="release-card__description">
-                  Takemichi Hanagaki is a that's reached the absolute pits of despair in his life. He finds out that the only girlfriend he ever had in his life that he dated in middle...
-                </p>
+                  <h3 class="release-card__title">
+                    Tokyo Revengers
+                  </h3>
+
+                  <p class="release-card__description">
+                    Takemichi Hanagaki is a that's reached the absolute pits of despair in his life. He finds out that the only girlfriend he ever had in his life that he dated in middle...
+                  </p>
+                </div>
+              </div>
+
+              <div class="releases__card release-card">
+                <div class="release-card__image-block">
+                  <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/sun-ken_rock.png")%> >
+                </div>
+
+                <div class="release-card__content">
+                  <div class="release-card__type">
+                    MANGA
+                  </div>
+
+                  <h3 class="release-card__title">
+                    Sun-Ken Rock
+                  </h3>
+
+                   <p class="release-card__description">
+                    Ken left Japan, pursuing the woman he loves to Korea. However, while she became a policewoman, Ken somehow wound up in a gang, even becoming their boss! The...
+                  </p>
+                </div>
+              </div>
+
+              <div class="releases__card release-card">
+                <div class="release-card__image-block">
+                  <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/black_clover.png")%> >
+                </div>
+
+                <div class="release-card__content">
+                  <div class="release-card__type">
+                    TV SHOW
+                  </div>
+
+                  <h3 class="release-card__title">
+                    Black Clover
+                  </h3>
+
+                  <p class="release-card__description">
+                    In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is...
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="miscellaneous">
+        <div class="container">
+          <section class="miscellaneous__content">
+            <h3 class="miscellaneous__title">Crunchyroll Originals</h3>
+
+            <div class="slider">
+              <div class="card miscellaneous__card">
+                <img alt="Jujutsu Kaisen" class="card__image" src=<%=require("./img/originals_1.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/magicheskaya-bitva" title="Jujutsu Kaisen"></a>
+                </div>
+              </div>
+
+              <div class="card miscellaneous__card">
+                <img alt="Kabaneri of the Iron Fortress" class="card__image" src=<%=require("./img/originals_2.png")%>>
+
+                <div class="card__back">
+                  <a href="https://jut.su/kabaneri/" title="Kabaneri of the Iron Fortress"></a>
+                </div>
+              </div>
+
+              <div class="card miscellaneous__card">
+                <img alt="Darling in the Franxx" class="card__image" src=<%=require("./img/originals_3.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/milyj-vo-frankce" title="Darling in the Franxx"></a>
+                </div>
+              </div>
+
+              <div class="card miscellaneous__card">
+                <img alt="RWBY Volume 7" class="card__image" src=<%=require("./img/originals_4.png")%>>
+
+                <div class="card__back">
+                  <a href="https://amedia.online/515-rwby-7.html" title="RWBY Volume 7"></a>
+                </div>
               </div>
             </div>
+          </section>
 
-            <div class="releases__card release-card">
-              <div class="release-card__image-block">
-                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/sun-ken_rock.png")%> >
+          <section class="miscellaneous__content">
+            <h3 class="miscellaneous__title">Popular Manga</h3>
+
+            <div class="slider">
+              <div class="card miscellaneous__card">
+                <img alt="Inside Mari, Volume 4" class="card__image" src=<%=require("./img/manga_1.png")%>>
+
+                <div class="card__back">
+                  <a href="https://mintmanga.live/ia_teper_mari" title="Inside Mari, Volume 4"></a>
+                </div>
               </div>
 
-              <div class="release-card__content">
-                <div class="release-card__type">
-                  MANGA
+              <div class="card miscellaneous__card">
+                <img alt="Touta Konoe" class="card__image" src=<%=require("./img/manga_2.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/hranitel-vechnosti" title="Touta Konoe"></a>
                 </div>
+              </div>
 
-                <h3 class="release-card__title">
-                  Sun-Ken Rock
-                </h3>
+              <div class="card miscellaneous__card">
+                <img alt="Honkai Impact" class="card__image" src=<%=require("./img/manga_3.png")%>>
 
-                <p class="release-card__description">
-                  Ken left Japan, pursuing the woman he loves to Korea. However, while she became a policewoman, Ken somehow wound up in a gang, even becoming their boss! The...
-                </p>
+                <div class="card__back">
+                  <a href="https://mangalib.me/honkai-impact-3rd-lazurnye-vody?section=info" title="Honkai Impact"></a>
+                </div>
+              </div>
+
+              <div class="card miscellaneous__card">
+                <img alt="Arpeggio of Blue Steel" class="card__image" src=<%=require("./img/manga_4.png")%>>
+
+                <div class="card__back">
+                  <a href="https://readmanga.io/arpedjio_voronenoi_stali" title="Arpeggio of Blue Steel"></a>
+                </div>
               </div>
             </div>
+          </section>
 
-            <div class="releases__card release-card">
-              <div class="release-card__image-block">
-                <img alt="Tokyo Revengers" class="release-card__image" src=<%=require("./img/black_clover.png")%> >
+          <section class="miscellaneous__content">
+            <h3 class="miscellaneous__title">All-New Anime</h3>
+
+            <div class="slider">
+              <div class="card miscellaneous__card">
+                <img alt="Dragon Ball Super: Broly" class="card__image" src=<%=require("./img/new_1.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/drakonij-zhemchug-super-broli" title="Dragon Ball Super: Broly"></a>
+                </div>
               </div>
 
-              <div class="release-card__content">
-                <div class="release-card__type">
-                  TV SHOW
+              <div class="card miscellaneous__card">
+                <img alt="Ajin" class="card__image" src=<%=require("./img/new_2.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/polulyudiм" title="Ajin"></a>
                 </div>
+              </div>
 
-                <h3 class="release-card__title">
-                  Black Clover
-                </h3>
+              <div class="card miscellaneous__card">
+                <img alt="SMuv-Luv" class="card__image" src=<%=require("./img/new_3.png")%>>
 
-                <p class="release-card__description">
-                  In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is...
-                </p>
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/polnoe-zatmenie" title="Muv-Luv"></a>
+                </div>
+              </div>
+
+              <div class="card miscellaneous__card">
+                <img alt="Vash the Stampede" class="card__image" src=<%=require("./img/new_4.png")%>>
+
+                <div class="card__back">
+                  <a href="https://yummyanime.club/catalog/item/trigan" title="Vash the Stampede"></a>
+                </div>
               </div>
             </div>
           </section>
