@@ -1,0 +1,47 @@
+.other {
+  padding: 35px 0 33px;
+
+  &__title {
+    @include title;
+
+    margin-bottom: 8px;
+
+    & > a {
+      color: $color-dark;
+      text-decoration: none;
+    }
+  }
+
+  &__description {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $description-color;
+  }
+
+  &__images-wrapper {
+    display: flex;
+  }
+
+  &__image-block {
+    @include card;
+
+    &:not(:last-child) {
+      margin-right: 21px;
+      flex-shrink: 1;
+    }
+
+    &:last-child {
+      flex-shrink: 2;
+    }
+  }
+
+  &__image {
+    @include img;
+
+    &:last-child {
+      width: max-content;
+    }
+  }
+}
