@@ -1,16 +1,18 @@
+const path = require('path');
 const MiniCss = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'prodaction',
+  mode: 'production',
   entry: './src/main.js',
   output: {
-    path: `${__dirname}/public`,
+    path: path.resolve(__dirname, './dist'),
     filename: 'bandle.js',
-    assetModuleFilename: 'assets/images/[name]-[hash][ext]',
+    assetModuleFilename: 'asset/img/[name]_[hash][ext]',
   },
   devServer: {
     port: 5000,
-    static: './public',
+    static: './dist',
     hot: true,
   },
   module: {
@@ -32,6 +34,10 @@ module.exports = {
   plugins: [
     new MiniCss({
       filename: 'styles.css',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Dragon ball',
+      template: './src/index.html',
     }),
   ],
 };

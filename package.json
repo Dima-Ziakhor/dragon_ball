@@ -12,7 +12,7 @@
     "lint": "npx eslint src/*.js",
     "slint": "npx stylelint \"**/*.scss\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
