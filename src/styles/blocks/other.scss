@@ -7,8 +7,7 @@
     margin-bottom: 8px;
 
     & > a {
-      color: $color-dark;
-      text-decoration: none;
+      @include link;
     }
   }
 

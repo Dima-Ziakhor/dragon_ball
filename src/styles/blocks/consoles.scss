@@ -1,0 +1,13 @@
+.consoles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__console {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+}
