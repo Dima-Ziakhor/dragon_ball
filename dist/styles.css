@@ -216,9 +216,11 @@ html {
 }
 
 .releases {
+  background-color: #fff;
+}
+.releases__wrapper {
   padding: 58px 0 44px;
   border-bottom: 1px solid #e5e5e5;
-  background-color: #fff;
 }
 .releases__title {
   margin-bottom: 18px;
@@ -229,4 +231,44 @@ html {
 .releases__cards {
   display: flex;
   justify-content: space-between;
+}
+
+.card {
+  border-radius: 21px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.card__image:hover {
+  transform: scale(1.1);
+}
+.card__back {
+  display: none;
+}
+
+.slider {
+  display: flex;
+}
+.slider > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.miscellaneous__content {
+  padding: 21px 0 35px;
+}
+.miscellaneous__content:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.miscellaneous__title {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #000;
 }
