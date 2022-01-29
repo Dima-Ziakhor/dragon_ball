@@ -1,6 +1,8 @@
 .card {
   @include card;
 
+  position: relative;
+  flex-basis: 420px;
   opacity: 0.9;
   cursor: pointer;
   transition:
@@ -20,7 +22,27 @@
     display: block;
   }
 
+  &__front {
+    @include cardDefault;
+
+    transform: perspective(600px) rotateY(0deg);
+  }
+
   &__back {
-    display: none;
+    @include cardDefault;
+
+    transform: perspective(600px) rotateY(180deg);
+  }
+}
+
+[data-reverse="true"] {
+  .card {
+    &__front {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    &__back {
+      transform: perspective(600px) rotateY(0deg);
+    }
   }
 }

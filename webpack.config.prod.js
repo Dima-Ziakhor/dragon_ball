@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/main.js',
+  entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bandle.js',
@@ -38,6 +38,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Dragon ball',
       template: './src/index.html',
+      inject: false,
     }),
   ],
 };
