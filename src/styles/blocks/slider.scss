@@ -1,5 +1,6 @@
 .slider {
   display: flex;
+  height: 165px;
 
   & > div:not(:last-child) {
     margin-right: 20px;
