@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*************************/
 /***/ (() => {
 
-eval("function cardTurnOver(selector) {\n  const cards = document.querySelectorAll(selector);\n\n  cards.forEach((card) => card.addEventListener('click', () => {\n    if (!card.classList.value.includes('card--is-flipped')) {\n      card.classList.add('card--is-flipped');\n    } else {\n      card.classList.remove('card--is-flipped');\n    }\n\n    console.log(card.classList.value.includes('card--is-flipped'));\n  }));\n}\n\ncardTurnOver('.card');\n\n\n//# sourceURL=webpack://dragon_ball/./src/js/index.js?");
+eval("function cardTurnOver(selector) {\n  const cards = document.querySelectorAll(selector);\n  let prevCard = null;\n\n  cards.forEach((card) => card.addEventListener('click', () => {\n    if (prevCard && prevCard !== card) {\n      prevCard.setAttribute('data-reverse', 'false');\n    }\n\n    if (card.getAttribute('data-reverse') === 'false') {\n      card.setAttribute('data-reverse', 'true');\n      prevCard = card;\n    } else {\n      card.setAttribute('data-reverse', 'false');\n    }\n  }));\n}\n\ncardTurnOver('.card');\n\n\n//# sourceURL=webpack://dragon_ball/./src/js/index.js?");
 
 /***/ }),
 

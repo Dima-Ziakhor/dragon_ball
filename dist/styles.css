@@ -253,6 +253,8 @@ html {
 .card {
   border-radius: 21px;
   overflow: hidden;
+  position: relative;
+  flex-basis: 420px;
   opacity: 0.9;
   cursor: pointer;
   transition: margin 0.3s, box-shadow 0.3s, opacity 0.3s;
@@ -267,15 +269,72 @@ html {
   height: 100%;
   display: block;
 }
-.card__back {
-  display: none;
+.card__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.3s linear;
+  transform: perspective(600px) rotateY(0deg);
 }
-.card--is-flipped {
-  opacity: 0.5;
+.card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.3s linear;
+  padding: 10px 20px;
+  transform: perspective(600px) rotateY(180deg);
+  background: -webkit-linear-gradient(225deg, #3343b8, #00bafd, #dcee74);
+  background: -moz-linear-gradient(225deg, #3343b8, #00bafd, #dcee74);
+  background: linear-gradient(225deg, #3343b8, #00bafd, #dcee74);
+}
+.card__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+.card__info {
+  list-style: none;
+  color: #000;
+}
+.card__info-item {
+  margin-bottom: 3px;
+}
+.card__info-item span {
+  font-weight: 500;
+}
+.card__link {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  width: max-content;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.card__link:hover {
+  color: #F701FF;
+}
+.card__link:active {
+  color: #fff;
+}
+
+[data-reverse=true] .card__front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+[data-reverse=true] .card__back {
+  transform: perspective(600px) rotateY(0deg);
 }
 
 .slider {
   display: flex;
+  height: 165px;
 }
 .slider > div:not(:last-child) {
   margin-right: 20px;

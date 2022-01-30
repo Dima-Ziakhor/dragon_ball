@@ -14,11 +14,11 @@
         <div class="container header__container">
           <div class="header__content-wrapper">
             <div class="header__top">
-              <a class="header__logo-block" href="#">
+              <a target="_blank" class="header__logo-block" href="#">
                 <img alt="Logo" class="header__logo" src=<%=require("./icon/logo.png")%>>
               </a>
 
-              <a class="header__sign-in sign-in" href="#" title="Sign in">
+              <a target="_blank" class="header__sign-in sign-in" href="/login.html" title="Sign in">
                 <img alt="User icon" class="sign-in__icon" src=<%=require("./icon/user_icon.svg")%>>
                 <span class="sign-in__text">Sign In</span>
               </a>
@@ -36,7 +36,7 @@
               </h3>
 
               <button class="trial header__trial" type="button">
-                <a href="#">start your free trial</a>
+                <a target="_blank" href="#">start your free trial</a>
               </button>
             </div>
           </div>
@@ -66,7 +66,7 @@
                   </div>
 
                   <h3 class="release-card__title">
-                    <a href="https://jut.su/tokyo-revengers/episode-14.html" class="release-card__title-link">
+                    <a target="_blank" href="https://jut.su/tokyo-revengers/episode-14.html" class="release-card__title-link">
                       Tokyo Revengers
                     </a>
                   </h3>
@@ -88,7 +88,7 @@
                   </div>
 
                   <h3 class="release-card__title">
-                    <a href="https://mangalib.me/sun-ken-rock?section=info" class="release-card__title-link">
+                    <a target="_blank" href="https://mangalib.me/sun-ken-rock?section=info" class="release-card__title-link">
                       Sun-Ken Rock
                     </a>
                   </h3>
@@ -110,7 +110,7 @@
                   </div>
 
                   <h3 class="release-card__title">
-                    <a href="https://animego.org/anime/chernyy-klever-27" class="release-card__title-link">
+                    <a target="_blank" href="https://animego.org/anime/chernyy-klever-27" class="release-card__title-link">
                       Black Clover
                     </a>
                   </h3>
@@ -137,7 +137,28 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/magicheskaya-bitva" title="Jujutsu Kaisen"></a>
+                  <h4 class="card__title">Jujutsu Kaisen</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2020
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Shounen, Horror, Demons, Action, School life, Supernatural
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://yummyanime.club/catalog/item/magicheskaya-bitva"
+                    class="card__link"
+                    title="Jujutsu Kaisen"
+                    target="_blank"
+                  >
+                    Learn more
+                  </a>
                 </div>
               </div>
 
@@ -147,7 +168,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://jut.su/kabaneri/" title="Kabaneri of the Iron Fortress"></a>
+                  <h4 class="card__title">Kabaneri of the Iron Fortress</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2016
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Drama, Fantasy, Mystery and Thriller
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://jut.su/kabaneri/"
+                    class="card__link"
+                    title="Kabaneri of the Iron Fortress"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -157,17 +197,55 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/milyj-vo-frankce" title="Darling in the Franxx"></a>
+                  <h4 class="card__title">Darling in the Franxx</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2018
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Drama, Furs, Romance, Love triangle, Fantasy, Alien races
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://yummyanime.club/catalog/item/milyj-vo-frankce"
+                    class="card__link"
+                    title="Darling in the Franxx"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
               <div class="card miscellaneous__card" data-reverse="false">
                 <div class="card__front">
-                  <img alt="RWBY Volume 7" class="card__image" src=<%=require("./img/originals_4.png")%>>
+                  <img alt="RWBY" class="card__image" src=<%=require("./img/originals_4.png")%>>
                 </div>
 
                 <div class="card__back">
-                  <a href="https://amedia.online/515-rwby-7.html" title="RWBY Volume 7"></a>
+                  <h4 class="card__title">RWBY</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2019
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Adventure, Fantasy
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://amedia.online/515-rwby-7.html"
+                    class="card__link"
+                    title="RWBY"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
             </div>
@@ -179,11 +257,30 @@
             <div class="slider">
               <div class="card miscellaneous__card" data-reverse="false">
                 <div class="card__front">
-                  <img alt="Inside Mari, Volume 4" class="card__image" src=<%=require("./img/manga_1.png")%>>
+                  <img alt="Inside Mari" class="card__image" src=<%=require("./img/manga_1.png")%>>
                 </div>
 
                 <div class="card__back">
-                  <a href="https://mintmanga.live/ia_teper_mari" title="Inside Mari, Volume 4"></a>
+                  <h4 class="card__title">Inside Mari</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2012
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Drama, Romance, Seinen, Psychological, School
+                    </li>
+                    <li class="card__info-item">
+                      <span>Volumes: </span>9
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://mintmanga.live/ia_teper_mari"
+                    class="card__link"
+                    title="Inside Mari"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -193,7 +290,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/hranitel-vechnosti" title="Touta Konoe"></a>
+                  <h4 class="card__title">UQ Holder!</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2013
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Action, Comedy, Adventure, Romance, Fantasy
+                    </li>
+                    <li class="card__info-item">
+                      <span>Volumes: </span>27
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://mangalib.me/uq-holder?section=info"
+                    class="card__link"
+                    title="UQ Holder!"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -203,7 +319,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://mangalib.me/honkai-impact-3rd-lazurnye-vody?section=info" title="Honkai Impact"></a>
+                  <h4 class="card__title">Honkai Impact</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2019
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Action, Drama, Sci-Fi, Shoujo-ai
+                    </li>
+                    <li class="card__info-item">
+                      <span>Volumes: </span>1
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://mangalib.me/honkai-impact-3rd-lazurnye-vody?section=info"
+                    class="card__link"
+                    title="Honkai Impact"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -213,7 +348,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://readmanga.io/arpedjio_voronenoi_stali" title="Arpeggio of Blue Steel"></a>
+                  <h4 class="card__title">Arpeggio of Blue Steel</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2009
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Science fiction, Seinen, Action
+                    </li>
+                    <li class="card__info-item">
+                      <span>Volumes: </span>22
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://readmanga.io/arpedjio_voronenoi_stali"
+                    class="card__link"
+                    title="Arpeggio of Blue Steel"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
             </div>
@@ -229,7 +383,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/drakonij-zhemchug-super-broli" title="Dragon Ball Super: Broly"></a>
+                  <h4 class="card__title">Dragon Ball Super: Broly</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2018
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Shounen, Adventure, Alien Races, Fantasy, Action
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Feature Film
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://yummyanime.club/catalog/item/drakonij-zhemchug-super-broli"
+                    class="card__link"
+                    title="Dragon Ball Super: Broly"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -239,7 +412,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/polulyudiм" title="Ajin"></a>
+                  <h4 class="card__title">Ajin</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2016
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Seinen, Detective, Drama, Mystery, Adventure, Horror, Action
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                    href="https://yummyanime.club/catalog/item/polulyudi"
+                    class="card__link"
+                    title="Ajin"
+                    target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -249,7 +441,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/polnoe-zatmenie" title="Muv-Luv"></a>
+                  <h4 class="card__title">Muv-Luv</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>2012
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Seinen, Drama, Manned Robots, Adventure, Horror, Sci-Fi
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                  href="https://yummyanime.club/catalog/item/polnoe-zatmenie"
+                  class="card__link"
+                  title="Muv-Luv"
+                  target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
 
@@ -259,7 +470,26 @@
                 </div>
 
                 <div class="card__back">
-                  <a href="https://yummyanime.club/catalog/item/trigan" title="Vash the Stampede"></a>
+                  <h4 class="card__title">Vash the Stampede</h4>
+
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <span>Year: </span>1998
+                    </li>
+                    <li class="card__info-item">
+                      <span>Genre: </span>Shounen, Western, Drama, Comedy, Adventure, Sci-Fi
+                    </li>
+                    <li class="card__info-item">
+                      <span>Type: </span>Series
+                    </li>
+                  </ul>
+
+                  <a
+                  href="https://yummyanime.club/catalog/item/trigan"
+                  class="card__link"
+                  title="Vash the Stampede"
+                  target="_blank"
+                  >Learn more</a>
                 </div>
               </div>
             </div>
@@ -270,7 +500,7 @@
       <section class="other">
         <div class="container">
           <h3 class="other__title">
-            <a href="https://jut.su/cowboy-bebop/" class="other__title-link" title="Cowboy Bebop">
+            <a target="_blank" href="https://jut.su/cowboy-bebop/" class="other__title-link" title="Cowboy Bebop">
               Cowboy Bebop
             </a>
           </h3>
@@ -295,7 +525,7 @@
     <footer class="footer">
       <section class="footer__main-content">
         <div class="container">
-          <a href="#" class="footer__link">
+          <a target="_blank" href="#" class="footer__link">
             <img alt="Logo" class="footer__logo" src=<%=require("./icon/footer-logo.svg")%>>
           </a>
 
@@ -336,7 +566,7 @@
             </div>
 
             <button class="trial footer__trial" type="button">
-              <a href="#">start your free trial</a>
+              <a target="_blank" href="#">start your free trial</a>
             </button>
           </div>
         </div>

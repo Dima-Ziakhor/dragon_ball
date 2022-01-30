@@ -31,18 +31,64 @@
   &__back {
     @include cardDefault;
 
+    padding: 10px 20px;
     transform: perspective(600px) rotateY(180deg);
+    background: -webkit-linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
+    background: -moz-linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
+    background: linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: $color-dark;
+    text-align: center;
+  }
+
+  &__info {
+    list-style: none;
+    color: $color-dark;
+  }
+
+  &__info-item {
+    margin-bottom: 3px;
+
+    & span {
+      font-weight: 500;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: max-content;
+    text-decoration: none;
+    color: $white-color;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: #F701FF;
+    }
+
+    &:active {
+      color: $white-color;
+    }
   }
 }
 
 [data-reverse="true"] {
   .card {
     &__front {
-      transform: perspective(600px) rotateY(-180deg);
+      transform: perspective(420px) rotateY(-180deg);
     }
 
     &__back {
-      transform: perspective(600px) rotateY(0deg);
+      transform: perspective(420px) rotateY(0deg);
     }
   }
 }
