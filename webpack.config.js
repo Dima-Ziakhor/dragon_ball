@@ -37,7 +37,14 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Dragon ball',
+      filename: 'index.html',
       template: './src/index.html',
+      inject: false,
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Login',
+      filename: 'login.html',
+      template: './src/login.html',
       inject: false,
     }),
   ],

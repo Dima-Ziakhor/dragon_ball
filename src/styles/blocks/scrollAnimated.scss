@@ -1,0 +1,12 @@
+.animated {
+  transform: translateY(120%);
+  opacity: 0;
+  transition:
+    transform 0.8s,
+    opacity 0.8s;
+
+  &--active {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

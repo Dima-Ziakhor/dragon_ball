@@ -1,2 +1,4 @@
 import '../styles/main.scss';
-import './index';
+import './flipCard';
+import './scrollAnimate';
+import './formValidation';
