@@ -20,4 +20,20 @@
   &__card:not(:last-child) {
     margin-right: 20px;
   }
+
+  @media (max-width: 767px) {
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__card {
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+  }
 }

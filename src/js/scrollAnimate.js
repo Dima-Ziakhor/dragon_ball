@@ -12,7 +12,7 @@ function onScroll() {
   animateItems.forEach((item) => {
     const animateItemHeight = item.offsetHeight;
     const animateOffset = offset(item).top;
-    const animateStart = 4;
+    const animateStart = 10;
 
     let animateItemPoint = window.innerHeight - animateItemHeight / animateStart;
 

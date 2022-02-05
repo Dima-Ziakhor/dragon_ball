@@ -33,21 +33,19 @@
 
     padding: 10px 20px;
     transform: perspective(600px) rotateY(180deg);
-    background: -webkit-linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
-    background: -moz-linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
-    background: linear-gradient(225deg, rgb(51, 67, 184), rgb(0, 186, 253), rgb(220, 238, 116));
+    background: -webkit-linear-gradient(90deg,#000000,#230b10,#331016,#230b10,#000000);
+    background: linear-gradient(90deg,#000000,#230b10,#331016,#230b10,#000000);
+    color: $white-color;
   }
 
   &__title {
     margin-bottom: 5px;
     font-size: 18px;
-    color: $color-dark;
     text-align: center;
   }
 
   &__info {
     list-style: none;
-    color: $color-dark;
   }
 
   &__info-item {

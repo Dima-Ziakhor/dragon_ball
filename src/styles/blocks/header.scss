@@ -92,4 +92,20 @@
       font-size: 16px;
     }
   }
+
+  @media (max-width: 991px) {
+    &__dragon-ball {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 35px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
 }
