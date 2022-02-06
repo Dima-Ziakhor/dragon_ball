@@ -2,18 +2,14 @@
   @include card;
 
   position: relative;
-  flex-basis: 420px;
+  flex-basis: 310px;
+  flex-shrink: 0;
   opacity: 0.9;
   cursor: pointer;
-  transition:
-    margin $transition-duration,
-    box-shadow $transition-duration,
-    opacity $transition-duration;
+  transition: opacity $transition-duration;
 
   &:hover {
     opacity: 1;
-    margin: -5px 0 5px;
-    box-shadow: 0 12px 14px 10px rgba(34 60 80 / 20%);
   }
 
   &__image {

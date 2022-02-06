@@ -1,8 +1,15 @@
 .slider {
-  display: flex;
+  position: relative;
   height: 165px;
+  overflow-x: hidden;
 
-  & > div:not(:last-child) {
-    margin-right: 20px;
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    & > div:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
