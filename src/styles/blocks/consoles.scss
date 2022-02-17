@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   &__console {
     display: block;
+    margin-bottom: 5px;
 
     &:not(:last-child) {
       margin-right: 22px;

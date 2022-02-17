@@ -2,13 +2,25 @@ const login = document.getElementById('login');
 const pass = document.getElementById('password');
 const submit = document.getElementById('submit');
 
-submit.addEventListener('click', (event) => {
+async function checkLocation() {
+  try {
+    const response = await fetch('https://ipinfo.io/json?token=8317693aade656');
+    const data = await response.json();
+    return await data.ip;
+  } catch {
+    throw new Error('Fetch failed');
+  }
+}
+
+submit.addEventListener('click', async (event) => {
   event.preventDefault();
 
-  if (login.value.toLowerCase() === 'beer' && pass.value.toLowerCase() === 'beer') {
-    const link = document.createElement('a');
+  const ip = await checkLocation();
 
-    link.href = '/index.html';
+  if (login.value.toLowerCase() === ip
+    && pass.value.toLowerCase() === ip) {
+    const link = document.createElement('a');
+    link.href = 'https://vk.com/memesquad47';
     link.target = '_blank';
 
     link.style.position = 'absolute';

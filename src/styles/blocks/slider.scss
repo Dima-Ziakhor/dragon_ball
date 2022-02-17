@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   height: 165px;
-  overflow-x: hidden;
 
   &__wrapper {
     display: flex;
@@ -10,6 +9,12 @@
 
     & > div:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    &__wrapper {
+      overflow: auto;
     }
   }
 }

@@ -72,4 +72,39 @@
       font-size: 13px;
     }
   }
+
+  @media (max-width: 991px) {
+    &__main-content {
+      padding: 49px 120px 60px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main-content {
+      padding: 49px 80px 60px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__main-content {
+      padding: 49px 0 60px;
+    }
+
+    &__get-premium-wrapper {
+      flex-direction: column;
+    }
+
+    &__get-more-wrapper {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
 }

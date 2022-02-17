@@ -1,0 +1,24 @@
+.hint {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+    color: #fff;
+  }
+
+  to {
+    left: 77vw;
+    color: #000;
+  }
+}
+
+.hint--active {
+  animation: move 5s linear infinite alternate;
+}

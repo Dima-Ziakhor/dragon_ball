@@ -3,13 +3,17 @@
 
   position: relative;
   flex-basis: 310px;
-  flex-shrink: 0;
   opacity: 0.9;
   cursor: pointer;
-  transition: opacity $transition-duration;
+  transition:
+    opacity $transition-duration,
+    margin $transition-duration,
+    box-shadow $transition-duration;
 
   &:hover {
+    margin: -5px 0 5px;
     opacity: 1;
+    box-shadow: 0px 10px 15px 10px rgba(34, 60, 80, 0.14);
   }
 
   &__image {
@@ -72,6 +76,20 @@
     &:active {
       color: $white-color;
     }
+  }
+
+  @media (max-width: 1199px) {
+    flex-shrink: 0;
+    opacity: 1;
+
+    &:hover {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 390px) {
+    flex-basis: 100%;
   }
 }
 
